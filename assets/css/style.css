@@ -1,6 +1,7 @@
 
 body, html {
     font-size: 16px;
+    font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
 }
 
 /* NAVIGATION */
@@ -35,7 +36,7 @@ nav.navbar .container .navbar-collapse ul.nav li:last-child {
 #main-nav{
     border-bottom:1px solid rgba(33,37,41,.1);
     background-color:#fff;
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;
+    /* font-family:'Open Sans','Helvetica Neue',Arial,sans-serif; */
     -webkit-transition:all .2s;
     -moz-transition:all .2s;
     transition:all .2s
@@ -45,7 +46,7 @@ nav.navbar .container .navbar-collapse ul.nav li:last-child {
     font-weight: 700;
     text-transform: uppercase;
     color: #f05f40;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    /* font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif; */
 }
 
 
@@ -132,12 +133,12 @@ nav.navbar .container .navbar-collapse ul.nav li a:hover {
 	-moz-transition: all 800ms ease-in-out;
 	-ms-transition: all 800ms ease-in-out;
 	-o-transition: all 800ms ease-in-out;
-	transition: all 800ms ease-in-out;
+    transition: all 800ms ease-in-out;
+    text-align: center;
 }
 .jumbotron .container {
   padding-top: 10em;
   padding-bottom: 8em;
-  text-align: center;
 }
 .jumbotron .container h1 {
   color: white;
@@ -157,6 +158,18 @@ nav.navbar .container .navbar-collapse ul.nav li a:hover {
   z-index: -999;
   background-blend-mode: soft-light;
   -webkit-background-blend-mode: soft-lightsoft-light;
+}
+
+.jumbotron a {
+    padding: 15px 18px;
+    background-color: #f05f40;
+    border-radius: 50%;
+    color: #fff
+}
+
+.jumbotron a:hover {
+    transition: opacity .2s;
+    opacity: .7;
 }
 
 /* ROW */
@@ -184,10 +197,8 @@ h1.title {
     /* text-align: center; */
 }
 
-#about p {
-    font-size: 24px;
+ #about p {
     text-align: center;
-    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 #skills {
@@ -231,6 +242,10 @@ h1.title {
 
 #portfolio hr {
     margin-bottom: 60px;
+}
+
+#portfolio img {
+    border: 1px solid #ccc;
 }
 
 .devicons:before {
@@ -322,10 +337,8 @@ h1.title {
     #main-nav.navbar-shrink .navbar-nav>li.active>a{
         background-color:transparent;
     }
-}
 
-@media (min-width: 1200px){
-    .jumbotron .container h1 {
-        font-size: 4rem;
+    #about p {
+        font-size: 20px;
     }
 }
