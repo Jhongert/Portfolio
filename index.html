@@ -38,7 +38,7 @@
                     <li><a href="#about" class="scroll-trigger">ABOUT ME</a></li>
                     <li><a href="#skills" class="scroll-trigger">SKILLS</a></li>
                     <li><a href="#portfolio" class="scroll-trigger">PORTFOLIO</a></li>
-                    <li><a href="#" class="scroll-trigger">CONTACT ME</a></li>
+                    <li><a href="#contact" class="scroll-trigger">CONTACT ME</a></li>
                 </ul>
             </div><!--/.navbar-collapse -->
         </div>
@@ -63,10 +63,6 @@
         <div class="container">
             <h1 class="title" data-animate="fadeInDown">About me</h1>
             <div class="row">
-                <!-- <div class="col-sm-12">
-                    <h1 class="title" data-animate="fadeInDown">About me</h1>
-                </div> -->
-            
                 <div class="col-md-10 col-md-offset-1">	
                     <div data-animate="fadeInUp">
                         <p>Jhongert Fuertes is a driven, experienced web developer who is passionate about exceptional program development and superb service to his clients. He is self-taught in several aspects of his experience and strive to continuously grow his knowledge base. He is also academically trained, graduated with honor from the Northeastern University in the Dominican Republic.</p>
@@ -249,7 +245,7 @@
 
             <hr>
 
-            <div class="row work">
+            <div class="row">
                 <div class="col-sm-6">
                     <a href="https://jhongert.github.io/hangman-game/" target="_blank">
                         <img class="img-responsive" src="assets/images/hangman.jpg" alt="Hangman Game">
@@ -267,6 +263,25 @@
         </div>
     </div>
     
+    <div class="section" id="contact">
+        <div class="container">
+            <h1 class="title" data-animate="fadeInDown">Let's Get In Touch!</h1>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 data-animate="bounceIn"><i class="fa fa-phone"></i></h1>
+                    <p>407-346-8396</p>
+                </div>
+                <div class="col-sm-6">
+                    <h1 data-animate="bounceIn"><i class="fa fa-envelope"></i></h1>
+                    <p><a href="mailto:jhongertf@gmail.com">jhongertf@gmail.com</a></p>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/jhongert-fuertes" target="_blank"><img src="assets/images/linkedin.png"></a>
+            <a href="https://github.com/jhongert" target="_blank"><img src="assets/images/github.png"></a>
+            <p><small>© Copyright 2017 Jhongert Fuertes</small></p>
+        </div>
+    </div>        
 
     <!-- JQuery -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
@@ -307,6 +322,8 @@
         }
 
         $(document).ready(function () {
+            
+            $('.jumbotron').css('height', screen.height);
             jumboHeight = $('.jumbotron').outerHeight();
             
             $('body').scrollspy({target: "#main-nav", offset: 50});
