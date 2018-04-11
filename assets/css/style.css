@@ -14,6 +14,7 @@ body, html {
 }
 
 #main-nav .navbar-brand {
+    font-size: 2em;
     font-weight: 700;
     text-transform: uppercase;
     color: #f05f40;
@@ -62,7 +63,6 @@ body, html {
     position: relative;
     margin-bottom: 0;
     padding: 0;
-    /* height: 600px; */
     width: 100vw;
     overflow: hidden;
     background: transparent;
@@ -76,9 +76,9 @@ body, html {
 .jumbotron .container {
   padding-top: 10em;
   padding-bottom: 8em;
+  color: white;
 }
 .jumbotron .container h1 {
-  color: white;
   margin-bottom: .5em;
   font-size: 2rem;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
@@ -86,10 +86,8 @@ body, html {
 
 .jumbotron-bg {
   background: url("../images/bg3.jpeg") no-repeat center center, rgba(112, 152, 255, 0);
-  /* background-size: cover; */
   position: fixed;
   width: 100%;
-  /* height: 600px; same height as jumbotron */
   top: 0;
   left: 0;
   z-index: -999;
@@ -226,7 +224,7 @@ h1.title {
     }
     
     #main-nav .navbar-brand{
-        font-size:1.75em;
+        font-size:3em;
         -webkit-transition:all .3s;
         -moz-transition:all .3s;
         transition:all .3s;
@@ -253,7 +251,7 @@ h1.title {
     }
 
     #main-nav.navbar-shrink .navbar-brand{
-        font-size: 1.25em;
+        font-size: 2em;
         color:#f05f40
     }
 
