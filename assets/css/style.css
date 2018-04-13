@@ -75,7 +75,7 @@ body, html {
 }
 .jumbotron .container {
   padding-top: 10em;
-  padding-bottom: 8em;
+  padding-bottom: 12em;
   color: white;
 }
 .jumbotron .container h1 {
@@ -85,7 +85,7 @@ body, html {
 }
 
 .jumbotron-bg {
-  background: url("../images/bg3.jpeg") no-repeat center center, rgba(112, 152, 255, 0);
+  background: url("../images/bg.jpg") no-repeat center center, rgba(112, 152, 255, 0);
   position: fixed;
   width: 100%;
   top: 0;
@@ -93,6 +93,12 @@ body, html {
   z-index: -999;
   background-blend-mode: soft-light;
   -webkit-background-blend-mode: soft-lightsoft-light;
+
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+
 }
 
 .jumbotron a {
@@ -201,7 +207,6 @@ h1.title {
 
 @media (min-width: 992px){
     .jumbotron-bg {
-        /* height: 100vh; */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
