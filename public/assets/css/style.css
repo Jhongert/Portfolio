@@ -183,6 +183,10 @@ h1.title {
     margin-bottom: 60px;
 }
 
+#portfolio hr:first-of-type{
+    border: none;
+}
+
 #contact {
     background-color: #222;
     color: #fff;
