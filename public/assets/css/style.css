@@ -136,6 +136,17 @@ h1.title {
     /* text-align: center; */
 }
 
+/* .carousel-container {
+    padding-top: 100px;
+    background-color: #222;
+} */
+/* .section-carousel {
+    background-color: #222;
+    padding-top: 120px;
+}
+.carousel-container .row {
+    margin-bottom: 2em;
+} */
  #about p {
     text-align: center;
 }
@@ -151,10 +162,11 @@ h1.title {
 }
 
 
-
-
-#portfolio h2, #portfolio p {
+/* #portfolio h2, #portfolio p {
     text-align: center;
+} */
+#portfolio h2 {
+    margin-top: 0;
 }
 
 #portfolio a {
@@ -195,9 +207,28 @@ h1.title {
     opacity: 1 !important;
 }
 
-@media (min-width: 768px){
-    #portfolio h2,  #portfolio p{
+
+a.btn {
+    background-color: #f05f40;
+    color: #fff !important;
+}
+
+a.btn:hover {
+    color:#fff !important;
+    background-color: #e05738;
+}
+
+/* @media (min-width: 768px){
+     #portfolio h2,  #portfolio p, #port{
         text-align: left;
+    } 
+} */
+@media (max-width: 768px){
+    #portfolio {
+        text-align: center;
+    }
+    #portfolio h2 {
+        margin-top: 20px;
     }
 }
 

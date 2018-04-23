@@ -1,6 +1,7 @@
 // Express
 var express = require("express");
 var app = express();
+var exphbs  = require('express-handlebars');
 
 var path = require('path');
 var PORT = process.env.PORT || 3000;
@@ -11,6 +12,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 // Handlebars
 // var exphbs = require("express-handlebars");
@@ -32,8 +36,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', function(req, res){
-    res.send('index.html');
-})
+    res.render("index");
+});
+
 // Router
 //app.use('/', product);
 
