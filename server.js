@@ -4,7 +4,7 @@ var app = express();
 var exphbs  = require('express-handlebars');
 
 var path = require('path');
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3002;
 
 // Sets up the Express app to handle data parsing
 var bodyParser = require("body-parser");
@@ -38,7 +38,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.get('/', function(req, res){
     res.render("index");
 });
-
 // Router
 //app.use('/', product);
 
